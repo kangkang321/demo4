@@ -21,7 +21,38 @@
 
     <vertx.verticle>io.openshift.booster.HttpApplication</vertx.verticle>
   </properties>
-
+  <pluginRepositories>
+     <pluginRepository>
+       <id>jboss-public-repo</id>
+       <url>https://repository.jboss.org/nexus/content/groups/public</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </pluginRepository>
+     <pluginRepository>
+       <id>repo.jenkins-ci.org</id>
+       <url>http://repo.jenkins-ci.org/public/</url>
+     </pluginRepository>
+   </pluginRepositories>
+   <repositories>
+     <repository>
+       <id>repo.jenkins-ci.org</id>
+       <url>http://repo.jenkins-ci.org/public/</url>
+     </repository>
+     <repository>
+       <id>jboss-public-repo</id>
+       <url>https://repository.jboss.org/nexus/content/groups/public</url>
+       <releases>
+         <enabled>true</enabled>
+       </releases>
+       <snapshots>
+         <enabled>false</enabled>
+       </snapshots>
+     </repository>
+   </repositories>
   <dependencyManagement>
     <dependencies>
       <dependency>
